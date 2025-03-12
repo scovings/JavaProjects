@@ -15,12 +15,12 @@ public class Calculator {
 
     String[] buttonValues = {
             "AC", "+/-", "%", "÷",
-            "7", "8", "9", "x",
+            "7", "8", "9", "×",
             "4", "5", "6", "-",
             "1", "2", "3", "+",
             "0", ".", "√", "="
     };
-    String[] rightSymbols = {"÷", "x", "-", "+", "="};
+    String[] rightSymbols = {"÷", "×", "-", "+", "="};
     String[] topSymbols = {"AC", "+/-", "%"};
 
     JFrame frame = new JFrame("Calculator");
