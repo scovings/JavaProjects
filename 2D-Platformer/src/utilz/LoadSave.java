@@ -8,9 +8,11 @@ import javax.imageio.ImageIO;
 
 public class LoadSave {
 
-    public static BufferedImage GetPlayerAtlas() {
+    public static final String PLAYER_ATLAS = "/res/player_sprites.png";
+
+    public static BufferedImage GetSpriteAtlas(String fileName) {
         BufferedImage img = null;
-        InputStream is = LoadSave.class.getResourceAsStream("/res/player_sprites.png");
+        InputStream is = LoadSave.class.getResourceAsStream("/" + fileName);
         try {
             img = ImageIO.read(is);
 
