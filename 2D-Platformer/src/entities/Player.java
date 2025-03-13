@@ -88,9 +88,6 @@ public class Player extends Entity {
 
     private void loadAnimations() {
         InputStream is = getClass().getResourceAsStream("/res/player_sprites.png");
-        if (is == null) {
-            System.err.println("File not found: /res/player_sprites.png");
-        }
         try {
             BufferedImage img = ImageIO.read(is);
 
